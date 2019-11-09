@@ -1,0 +1,165 @@
+@import '_fonts.scss';
+@import '_reset.scss';
+@import '_animations';
+
+$bgc: #000;
+body {
+  background: $bgc;
+  @include mainfont;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  border: 1px solid blue;
+  position: relative;
+}
+
+
+// ================================================ NAV =======================
+
+section {
+  width: 100%;
+}
+
+nav {
+  border: 1px solid green;
+  display: block;
+  width: 100%;
+  background-image: url('/assets/imgs/menu_bg_repeat.jpg');
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid yellow;
+    width: 100%;
+    max-width: 1000px;
+    justify-content: space-around;
+    .nav-li {
+      float:left;
+      padding: 16px 16px;
+      border: 1px solid green;
+      margin: 0 5px;
+      .nav-a {
+        padding: 4px;
+        font-size: 16px;
+        position: relative;
+        text-decoration: none;
+        color: $nav-link-color;
+        transition: all .12s;
+        &:hover {
+          color: lighten($nav-link-color, 50%);
+          text-shadow: 0 0 1rem #fa402f, 0 0 0.2em #fa402f, -1px 0 3px #ff1c08, 1px 0 3px #ff1c08, 0 -1px 3px #ff1c08, 0 1px 3px #ff1c08;
+        }
+        .nav-img-container {
+          width: 100%;
+          height: 100%;
+          left:0;
+          position: absolute;
+          top: -2px;
+            .nav-img {
+              display: block;
+              width: 28.750px;
+              height: 28.750px;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%,-50%);
+            }
+            .active-img {
+              opacity: 0;
+              transition: all .12s;
+            }
+
+
+
+
+
+            &:hover .active-img {
+              opacity: 1;
+              filter: brightness(2);
+
+            }
+            &:hover .not-active-img {
+              opacity: 0;
+              filter: opacity(0);
+              
+            }
+        }
+      }
+    }
+  }
+}
+
+.nav-sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.middle {
+  margin: auto;
+}
+
+
+
+// ======================================= SECTION POSTER ====================
+
+
+
+.main-poster {
+  background-color: #222;
+  background-image: url('/assets/imgs/kv.jpg');
+  margin-top: 110px;
+  width: 100%;
+  height: 2530px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.logo-tab {
+  position: absolute;
+  top: 1425px;
+  width: 100%;
+  .logo {
+    display: block;
+    @include animation-fade-in;
+  }
+}
+
+.misc-text {
+  font-size: 42px;
+  @include animation-fade-in;
+  p {
+    margin: 30px;
+    word-spacing: 0.4rem;
+    letter-spacing: 2.5px;
+    line-height: 71px;
+    text-shadow: -2px -2px 12px black, 2px 2px 12px black;
+    &::first-letter {
+      font-size: 48px;
+    }
+  }
+}
+
+.text-change {
+  color: attr(data-text-color);
+  color: darken(red, 10%);
+  &:after {
+    content: '(' attr(data-text-color) ')';
+  }
+
+}
+
+.d-none {
+  display: none !important;
+
+}
+
+.no-spacing {
+  letter-spacing: -5px;
+}

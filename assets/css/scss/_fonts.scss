@@ -1,0 +1,8 @@
+$main-font: 'Noto Serif JP', serif;
+$nav-link-color: rgb(248, 207, 203);
+
+@mixin mainfont() {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.3rem;
+  color: white;
+}
