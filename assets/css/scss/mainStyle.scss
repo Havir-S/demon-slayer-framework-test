@@ -18,6 +18,93 @@ body {
   position: relative;
 }
 
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.bottom {
+  bottom: 200px;
+}
+
+.top {
+  top: 0;
+}
+.top-middle {
+  top: 50%;
+}
+
+.left {
+  left: 0;
+}
+.left50 {
+  left: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+
+
+.right50 {
+  right: 50%;
+}
+.right50
+
+.translate-fix-xy {
+  transform: translate(-50%,-50%);
+}
+
+.translate-fix-x {
+  transform: translateX(-50%);
+  transform: translate(-50%, 0);
+}
+
+.translate-fix-y {
+  transform: translateY(-50%);
+  transform: translate(0, -50%);
+}
+
+.middle {
+  margin: auto;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.d-grid {
+  display: grid !important;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-inline-grid {
+  display: inline-grid;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.no-spacing {
+  letter-spacing: -5px;
+}
+
 
 // ================================================ NAV =======================
 
@@ -73,19 +160,14 @@ nav {
               transition: all .12s;
             }
 
-
-
-
-
             &:hover .active-img {
               opacity: 1;
-              filter: brightness(2);
 
             }
             &:hover .not-active-img {
               opacity: 0;
               filter: opacity(0);
-              
+
             }
         }
       }
@@ -99,9 +181,7 @@ nav {
   z-index: 10;
 }
 
-.middle {
-  margin: auto;
-}
+
 
 
 
@@ -149,17 +229,27 @@ nav {
 .text-change {
   color: attr(data-text-color);
   color: darken(red, 10%);
+  text-shadow: -1px -1px 18px darkblue, 1px 1px 18px darkblue;
   &:after {
     content: '(' attr(data-text-color) ')';
   }
-
 }
 
-.d-none {
-  display: none !important;
-
+.streaming-container {
+  width: 100%;
+  max-width: 100% !important;
+  .streaming-img {
+    margin: auto;
+    max-width: 248px;
+    width: 100%;
+  }
 }
 
-.no-spacing {
-  letter-spacing: -5px;
+.kv {
+  width: 100%;
+  .kv-img {
+    display: inline-block;
+    max-width: 100%;
+    width: 100%;
+  }
 }
