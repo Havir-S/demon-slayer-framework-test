@@ -3,6 +3,7 @@
 @import '_animations';
 
 $bgc: #000;
+$reddish: #c30017;
 body {
   background: $bgc;
   @include mainfont;
@@ -105,6 +106,47 @@ body {
   letter-spacing: -5px;
 }
 
+.hidden {
+  position:absolute;
+  clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// ================================================ GRID PROPERTIES ===========
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+
+}
+
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-2-1 {
+  display: grid;
+  // grid-template-columns: repeat(attr(data-columns), 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
 
 // ================================================ NAV =======================
 
@@ -123,7 +165,8 @@ nav {
     border: 1px solid yellow;
     width: 100%;
     max-width: 1000px;
-    justify-content: space-around;
+    justify-content: center;
+    z-index: 6;
     .nav-li {
       float:left;
       padding: 16px 16px;
@@ -148,8 +191,8 @@ nav {
           top: -2px;
             .nav-img {
               display: block;
-              width: 28.750px;
-              height: 28.750px;
+              width: 35.750px;
+              height: 35.750px;
               position: absolute;
               left: 50%;
               top: 50%;
@@ -159,9 +202,11 @@ nav {
               opacity: 0;
               transition: all .12s;
             }
+            .not-active-img {
+            }
 
             &:hover .active-img {
-              opacity: 1;
+              opacity: 0.8;
 
             }
             &:hover .not-active-img {
@@ -171,6 +216,20 @@ nav {
             }
         }
       }
+    }
+
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    background: url('/assets/imgs/menu_decor_l.png') no-repeat left,
+                url('/assets/imgs/menu_decor_r.png') no-repeat right;
+    @media screen and (max-width: 1355px ) {
+      display: none;
     }
   }
 }
@@ -190,24 +249,98 @@ nav {
 
 
 .main-poster {
-  background-color: #222;
-  background-image: url('/assets/imgs/kv.jpg');
   margin-top: 110px;
   width: 100%;
-  height: 2530px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
+
 }
 
 .logo-tab {
   position: absolute;
-  top: 1425px;
+  top: 1250px;
   width: 100%;
+  max-width: 100%;
+  text-align: center;
   .logo {
-    display: block;
+    display: inline-block;
+    max-width: 600px;
     @include animation-fade-in;
+  }
+
+  @media screen and (max-width: 1750px) {
+    top: 1100px;
+    .logo {
+      max-width: 550px;
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    top: 1000px;
+    .logo {
+      max-width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    top: 900px;
+    .logo {
+      max-width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    top: 800px;
+    .logo {
+      max-width: 350px;
+    }
+  }
+
+  @media screen and (max-width: 1090px) {
+    top: 700px;
+    .logo {
+      max-width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    top: 600px;
+    .logo {
+      max-width: 300px;
+    }
+  }
+  @media screen and (max-width: 868px) {
+    top: 500px;
+    .logo {
+      max-width: 300px;
+    }
+  }
+  @media screen and (max-width: 756px) {
+    top: 430px;
+    .logo {
+      max-width: 260px;
+    }
+  }
+  @media screen and (max-width: 650px) {
+    top: 370px;
+    .logo {
+      max-width: 220px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    top: 330px;
+    .logo {
+      max-width: 150px;
+    }
+  }
+
+  @media screen and (max-width: 475px) {
+    top: 290px;
+    .logo {
+      display: none;
+    }
   }
 }
 
@@ -224,6 +357,9 @@ nav {
       font-size: 48px;
     }
   }
+  @media screen and (max-width: 1400px) {
+    display: none !important;
+  }
 }
 
 .text-change {
@@ -237,19 +373,170 @@ nav {
 
 .streaming-container {
   width: 100%;
-  max-width: 100% !important;
-  .streaming-img {
-    margin: auto;
-    max-width: 248px;
-    width: 100%;
-  }
+  max-width: 800px !important;
+  background-image: url('/assets/imgs/streaming.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 300px;
+  top: 90%;
+  // .streaming-img {
+  //   margin: auto;
+  //   max-width: 248px;
+  //   width: 100%;
+  // }
 }
 
 .kv {
   width: 100%;
+  position: relative;
   .kv-img {
     display: inline-block;
     max-width: 100%;
     width: 100%;
+    @include animation-fade-in;
   }
 }
+
+// ===================================== NEWS SECTION ======================
+
+.news-section {
+  h2 {
+    text-align: center;
+    max-width: 350px;
+    margin:0 auto 60px;
+    .news-img {
+      max-width: 100%;
+    }
+  }
+  ul {
+    margin: 15px auto;
+
+    li {
+      position: relative;
+      padding: 25px 30px;
+      border-top: 1px solid #444;
+      vertical-align: middle;
+
+
+      .news-date {
+        color: $reddish;
+        padding-bottom: 0;
+        margin-bottom: 4px;
+        font-size: 14px;
+        // background: url('/assets/imgs/news-button.png') no-repeat;
+      }
+
+      .news-title {
+        display: block;
+        padding-top: 5px;
+
+      }
+
+      a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .news-icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 19px;
+        transform: translateY(-50%);
+      }
+      & * {
+        padding: 11px 0;
+        letter-spacing: 1px;
+        font-size: 15px;
+      }
+      &:last-child {
+        border-bottom: 1px solid #444;
+      }
+      &:first-child {
+        border-bottom: 0;
+      }
+
+    }
+  }
+
+
+  &::before {
+    content: "";
+    display: block;
+    height: 230px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: url('/assets/imgs/bg_black_repeat_down.png');
+    z-index: 2;
+    height: 300px;
+  }
+}
+
+
+// ===================================================== INTRODUCTION =========
+
+.introduction {
+  padding-top: 360px;
+  background: url('/assets/imgs/bg_repeat_blue.jpg');
+  min-height: 100vh;
+  padding-bottom: 300px;
+
+  h2 {
+    text-align: center;
+    .introduction-img {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+
+  .text-area {
+    max-width: 800px;
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+
+    h2 {
+      font-size: 55px;
+      letter-spacing: 2px;
+      font-weight: 600;
+      line-height: 2em;
+      margin: 35px 0;
+    }
+    p {
+      white-space: pre;
+      font-weight: 300;
+      font-size: 19px;
+      line-height: 2.3em;
+    }
+
+    .reddish {
+      color: $reddish;
+    }
+
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url('/assets/imgs/bg_black_repeat_top.png') bottom;
+    bottom: 300px;
+    width: 100%;
+    height: 300px;
+    z-index: 2;
+  }
+
+
+}
+
+// ========================================= CAST SECTION ====================
