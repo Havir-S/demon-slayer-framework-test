@@ -1,3 +1,5 @@
+(function() {
+
 // SCROLL EVENTS
 
 const documents = document.documentElement,
@@ -138,3 +140,5 @@ let slider = setInterval(function() {
   }
   changeSlide(currentSlideIndex++);
 },3000);
+
+})();
