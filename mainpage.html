@@ -23,6 +23,95 @@
   </head>
   <body>
     <div class="wrapper">
+      <section class='mobile-nav-section'>
+        <div class="mobile-open">
+          <div id='toggle-mobile-nav' class="mobile-icon">
+            <div class="mobile-icon-inside">
+              <p class='line line-top'></p>
+              <p class='line line-middle'></p>
+              <p class='line line-bottom'></p>
+            </div>
+            <img class='nav-img not-active-img img-mobile-icon' src="./assets/imgs/not-active.png" alt="img">
+          </div>
+        </div>
+        <div id='mobile-navbar' class="wrapped-menu d-none">
+          <ul class='grid-2-1 mobile-menu-grid center-content'>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>TOP</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon ' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>News</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Streaming</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Introduction</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Story</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Character</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Staff</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Music</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Trailer</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Comic</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Movie</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+            <li>
+              <a class='left50 top50 translate-fix-xy' href="#">
+                <span>Facebook</span>
+              </a>
+              <img class='nav-img not-active-img left50 top50 translate-fix-xy mobile-a-icon' src="./assets/imgs/not-active.png" alt="img">
+            </li>
+
+          </ul>
+        </div>
+      </section>
       <section class='nav-sticky'>
         <header class='hidden'>
           <h2 class='hidden'>NAVIGATION</h2>
@@ -74,7 +163,7 @@
               </a>
             </li>
             <li class='nav-li'>
-              <a class='nav-a' href="#story">
+              <a class='nav-a' href="#episodes">
                 <span>Story</span>
                 <div class="nav-img-container">
                   <img class='nav-img not-active-img' src="./assets/imgs/not-active.png" alt="img">
@@ -189,8 +278,8 @@
         <header class='hidden'>
           <h2 class='hidden'>NEWS SECTION</h2>
         </header>
-        <h2>
-          <img class='news-img' src="./assets/imgs/title_news.png" alt="news">
+        <h2 class='h2-pic'>
+          <img class='h2-picture' src="./assets/imgs/title_news.png" alt="news">
         </h2>
 
         <div class="container" data-columns='2'>
@@ -451,12 +540,12 @@ and demons interwine...begins now!</p>
         </h2>
 
         <div class="videos-div">
-          <button class='btn left50 translate-fix-x bottom btn-left' type="button" name="button">PREV</button>
-          <button class='btn left50 translate-fix-x bottom btn-right' type="button" name="button">NEXT</button>
+          <button class='trailer-prev btn left50 translate-fix-x bottom btn-left' type="button" name="button">PREV</button>
+          <button class='trailer-next btn left50 translate-fix-x bottom btn-right' type="button" name="button">NEXT</button>
 
           <div class="videos-list">
 
-            <figure class='video-div'>
+            <figure data-trailer-index='0' class='video-div'>
               <div class="play-button-div">
                 <img class='video-poster' src="./assets/imgs/video1.jpg" alt="video1">
                 <img class='play-button top50 left50 translate-fix-xy' src="./assets/imgs/btn_play.png" alt="video2">
@@ -464,7 +553,7 @@ and demons interwine...begins now!</p>
               <figcaption class='video-title ltsp'>English Dub Trailer</figcaption>
 
             </figure>
-            <figure class='video-div'>
+            <figure data-trailer-index='1' class='video-div'>
               <div class="play-button-div">
                 <img class='video-poster' src="./assets/imgs/video2.jpg" alt="video1">
                 <img class='play-button top50 left50 translate-fix-xy' src="./assets/imgs/btn_play.png" alt="video2">
@@ -472,7 +561,7 @@ and demons interwine...begins now!</p>
               <figcaption class='video-title ltsp'>DEMON SLAYER - KIMETSU NO YAIBA - The Movie: Mugen Train Announcement Trailer</figcaption>
             </figure>
 
-            <figure class='video-div'>
+            <figure data-trailer-index='2' class='video-div'>
               <div class="play-button-div">
                 <img class='video-poster' src="./assets/imgs/video3.jpg" alt="video1">
                 <img class='play-button top50 left50 translate-fix-xy' src="./assets/imgs/btn_play.png" alt="video2">
@@ -480,7 +569,7 @@ and demons interwine...begins now!</p>
               <figcaption class='video-title ltsp'>Trailer Vol.2</figcaption>
             </figure>
 
-            <figure class='video-div'>
+            <figure data-trailer-index='3' class='video-div'>
               <div class="play-button-div">
                 <img class='video-poster' src="./assets/imgs/video4.jpg" alt="video1">
                 <img class='play-button top50 left50 translate-fix-xy' src="./assets/imgs/btn_play.png" alt="video2">
@@ -489,21 +578,21 @@ and demons interwine...begins now!</p>
 
             </figure>
 
-            <figure class='video-div'>
+            <figure data-trailer-index='4' class='video-div'>
               <div class="play-button-div">
                 <img class='video-poster' src="./assets/imgs/video5.jpg" alt="video1">
                 <img class='play-button top50 left50 translate-fix-xy' src="./assets/imgs/btn_play.png" alt="video2">
               </div>
               <figcaption class='video-title ltsp'>Teaser</figcaption>
             </figure>
-            <figure class='video-div'>
+            <figure data-trailer-index='5' class='video-div'>
               <div class="play-button-div">
                 <img class='video-poster' src="./assets/imgs/video6.jpg" alt="video1">
                 <img class='play-button top50 left50 translate-fix-xy' src="./assets/imgs/btn_play.png" alt="video2">
               </div>
               <figcaption class='video-title ltsp'>CM 1M</figcaption>
             </figure>
-            <figure class='video-div'>
+            <figure data-trailer-index='6' class='video-div'>
               <div class="play-button-div">
                 <img class='video-poster' src="./assets/imgs/video7.jpg" alt="video1">
                 <img class='play-button top50 left50 translate-fix-xy' src="./assets/imgs/btn_play.png" alt="video2">
@@ -785,6 +874,251 @@ and demons interwine...begins now!</p>
         <h2 class='h2-pic'>
           <img class='h2-picture' src="./assets/imgs/streaming2.png" alt="streaming">
         </h2>
+        <h3 class='description-img'>Schedule</h3>
+
+        <div class="container on-air">
+          <div class='stream-div'>
+            <ul class="grid-1-1">
+              <li class='header'>
+                <p class='channel'>Platform</p>
+                <p class='date'>Starting Date</p>
+                <p class='link'>Link</p>
+              </li>
+              <li>
+                <p>Crunchyroll</p>
+                <p>Every Saturday</p>
+                <a href="#" traget="_blank">
+                  <img src="./assets/imgs/link-icon.png" alt="link">
+                </a>
+              </li>
+              <li>
+                <p>Funimation</p>
+                <p>Every Saturday</p>
+                <a href="#" traget="_blank">
+                  <img src="./assets/imgs/link-icon.png" alt="link">
+                </a>
+              </li>
+              <li>
+                <p>Hulu</p>
+                <p>Every Saturday</p>
+                <a href="#" traget="_blank">
+                  <img src="./assets/imgs/link-icon.png" alt="link">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+      <section id='comic' class='comic-section'>
+        <header class='hidden'>
+          <h2 class='hidden'>COMIC SECTION</h2>
+        </header>
+
+        <h2 class='h2-pic'>
+          <img class='h2-picture' src="./assets/imgs/comic.png" alt="comic">
+        </h2>
+
+        <div class="container manga-container">
+          <ul class='grid-3-1 center-content manga-grid'>
+            <li>
+              <a href="#">
+                <div class="manga-img"></div>
+                <div class="manga-title">
+                  <p class='ltsp'>Demon Slayer: Kimetsu no Yaiba</p>
+                  <p class='ltsp'>Vol. 1</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="manga-img"></div>
+                <div class="manga-title">
+                  <p class='ltsp'>Demon Slayer: Kimetsu no Yaiba</p>
+                  <p class='ltsp'>Vol. 1</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="manga-img"></div>
+                <div class="manga-title">
+                  <p class='ltsp'>Demon Slayer: Kimetsu no Yaiba</p>
+                  <p class='ltsp'>Vol. 1</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="manga-img"></div>
+                <div class="manga-title">
+                  <p class='ltsp'>Demon Slayer: Kimetsu no Yaiba</p>
+                  <p class='ltsp'>Vol. 1</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="manga-img"></div>
+                <div class="manga-title">
+                  <p class='ltsp'>Demon Slayer: Kimetsu no Yaiba</p>
+                  <p class='ltsp'>Vol. 1</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="manga-img"></div>
+                <div class="manga-title">
+                  <p class='ltsp'>Demon Slayer: Kimetsu no Yaiba</p>
+                  <p class='ltsp'>Vol. 1</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section id='episodes' class='episodes-section'>
+        <header class='hidden'>
+          <h2 class='hidden'>COMIC SECTION</h2>
+        </header>
+
+        <h2 class='h2-pic'>
+          <img class='h2-picture' src="./assets/imgs/story.png" alt="comic">
+        </h2>
+
+        <div class=" container episodes-list">
+          <div class="episodes-ls">
+
+
+          <ul>
+            <li>
+              <a href="#">Episode 1 </a>
+            </li>
+            <li>
+              <a href="#">Episode 2 </a>
+            </li>
+            <li>
+              <a href="#">Episode 3 </a>
+            </li>
+            <li>
+              <a href="#">Episode 4 </a>
+            </li>
+            <li>
+              <a href="#">Episode 5 </a>
+            </li>
+            <li>
+              <a href="#">Episode 6 </a>
+            </li>
+            <li>
+              <a href="#">Episode 7 </a>
+            </li>
+            <li>
+              <a href="#">Episode 8 </a>
+            </li>
+            <li>
+              <a href="#">Episode 9 </a>
+            </li>
+            <li>
+              <a href="#">Episode 10 </a>
+            </li>
+            <li>
+              <a href="#">Episode 11 </a>
+            </li>
+            <li>
+              <a href="#">Episode 12 </a>
+            </li>
+            <li>
+              <a href="#">Episode 13 </a>
+            </li>
+            <li>
+              <a href="#">Episode 14 </a>
+            </li>
+            <li>
+              <a href="#">Episode 15 </a>
+            </li>
+            <li>
+              <a href="#">Episode 16 </a>
+            </li>
+            <li>
+              <a href="#">Episode 17 </a>
+            </li>
+            <li>
+              <a href="#">Episode 18 </a>
+            </li>
+            <li>
+              <a href="#">Episode 19 </a>
+            </li>
+            <li>
+              <a href="#">Episode 20 </a>
+            </li>
+            <li>
+              <a href="#">Episode 21 </a>
+            </li>
+            <li>
+              <a href="#">Episode 22 </a>
+            </li>
+            <li>
+              <a href="#">Episode 23 </a>
+            </li>
+            <li>
+              <a href="#">Episode 24 </a>
+            </li>
+            <li>
+              <a href="#">Episode 25 </a>
+            </li>
+            <li>
+              <a class='selected' href="#">Episode 26 </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+
+        <div class=" container episode-sc-container">
+          <div class="episode-sc-main">
+            <div class="episodes-bar">
+              <div class="episode-div" data-slide='0'>
+                <img class='episode-img main-slide' src='./assets/imgs/slide1.jpg' alt="slide1">
+              </div>
+              <div class="episode-div" data-slide='1'>
+                <img class='episode-img ' src='./assets/imgs/slide2.jpg' alt="slide1">
+              </div>
+              <div class="episode-div" data-slide='2'>
+                <img class='episode-img' src='./assets/imgs/slide3.jpg' alt="slide1">
+              </div>
+              <div class="episode-div" data-slide='3'>
+                <img class='episode-img' src='./assets/imgs/slide4.jpg' alt="slide1">
+              </div>
+            </div>
+
+            <div class="d-flex center-content control-panel">
+              <div class="change-control active-sc" data-slide-index='0'></div>
+              <div class="change-control" data-slide-index='1'></div>
+              <div class="change-control" data-slide-index='2'></div>
+              <div class="change-control" data-slide-index='3'></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="episode-description-main">
+          <h3 class='description-img episode-number'>Episode 26</h3>
+          <h3 class='episode-title ltsp'>New Mission</h3>
+          <h4 class='episode-description ltsp'>
+            <div class="margin-text">
+          As Tanjiro and the others are devoted
+          to their rehabilitation training, the absolute master of the demons,
+          Muzan Kibutsuji, gathers the lower ranks of the Twelve Kizuki.
+          The demons, too, are preparing to make their next move. As training
+          draws to a close, Tanjiro has improved to the point where he can fight
+          on equal terms with Kanao. Just then, he receives word of a new mission
+          from his Kasugai Crow.
+          </div>
+        </h4>
+        </div>
 
       </section>
 
