@@ -333,7 +333,7 @@ nav::before {
   top: 0;
   height: 106px;
   width: 100%;
-  background: url("/assets/imgs/menu_decor_l.png") no-repeat left, url("/assets/imgs/menu_decor_r.png") no-repeat right;
+  background: url("/demon-slayer-framework-test/assets/imgs/menu_decor_l.png") no-repeat left, url("/assets/imgs/menu_decor_r.png") no-repeat right;
 }
 @media screen and (max-width: 1355px) {
   nav::before {
@@ -494,7 +494,7 @@ nav::before {
 .streaming-container {
   width: 100%;
   max-width: 800px !important;
-  background-image: url("/assets/imgs/streaming.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/streaming.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -588,14 +588,14 @@ nav::before {
   display: block;
   position: absolute;
   width: 100%;
-  background: url("/assets/imgs/bg_black_repeat_down.png");
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_down.png");
   z-index: 2;
   height: 300px;
 }
 
 .introduction {
   padding-top: 360px;
-  background: url("/assets/imgs/bg_repeat_blue.jpg");
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_repeat_blue.jpg");
   min-height: 100vh;
   padding-bottom: 300px;
 }
@@ -665,7 +665,7 @@ nav::before {
   content: "";
   display: block;
   position: absolute;
-  background: url("/assets/imgs/bg_black_repeat_top.png") bottom;
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_top.png") bottom;
   width: 100%;
   height: 300px;
   z-index: 2;
@@ -683,7 +683,7 @@ nav::before {
   display: block;
   position: absolute;
   background: red;
-  background: url("/assets/imgs/bg_black_repeat_down.png") bottom;
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_down.png") bottom;
   width: 100%;
   height: 300px;
   z-index: 2;
@@ -712,7 +712,7 @@ nav::before {
   height: 64px;
   font-size: 16px;
   line-height: 64px;
-  background-image: url("/assets/imgs/cast.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/cast.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -745,7 +745,7 @@ nav::before {
 }
 
 .trailer-section {
-  background: url("/assets/imgs/bg_repeat_red.jpg");
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_repeat_red.jpg");
   min-height: 500px;
   overflow: hidden;
   padding: 270px 0 110px;
@@ -897,7 +897,7 @@ nav::before {
   max-width: 300px;
 }
 .characters-section .characters-logo-container {
-  background: url("/assets/imgs/bg_repeat_red.jpg");
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_repeat_red.jpg");
   margin: 0 0 50px;
   position: relative;
 }
@@ -907,7 +907,7 @@ nav::before {
 .characters-section .characters-logo-container .h2-pic::after {
   content: "";
   position: absolute;
-  background: url("/assets/imgs/bg_black_repeat_top.png") center top;
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_top.png") center top;
   width: 100%;
   bottom: 0;
   height: 300px;
@@ -931,12 +931,12 @@ nav::before {
 }
 .characters-section .characters-container .characters-grid .char-div .char-img {
   background: no-repeat center top;
-  background-image: url("/assets/imgs/thumb_01.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/thumb_01.png");
   background-size: 100%;
   height: 200px;
 }
 .characters-section .characters-container .characters-grid .char-div .demon {
-  background-image: url("/assets/imgs/thumb_02.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/thumb_02.png");
 }
 .characters-section .characters-container .characters-grid .char-div .img-hover {
   position: absolute;
@@ -945,7 +945,7 @@ nav::before {
   top: 0;
   left: 0;
   background: no-repeat center bottom;
-  background-image: url("/assets/imgs/thumb_01.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/thumb_01.png");
   background-size: 100%;
   opacity: 0;
   transition: all 0.13s;
@@ -954,7 +954,7 @@ nav::before {
   opacity: 1;
 }
 .characters-section .characters-container .characters-grid .char-div .demon-active {
-  background-image: url("/assets/imgs/thumb_02.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/thumb_02.png");
 }
 .characters-section .characters-container .characters-grid .char-div .char-info {
   text-align: center;
@@ -972,7 +972,7 @@ nav::before {
   padding-top: 250px;
   min-height: 800px;
   position: relative;
-  background: url("/assets/imgs/bg_repeat_blue.jpg");
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_repeat_blue.jpg");
   padding-bottom: 180px;
 }
 #streaming.streaming-sector::before {
@@ -981,7 +981,7 @@ nav::before {
   width: 100%;
   height: 200px;
   top: 0px;
-  background: url("/assets/imgs/bg_black_repeat_down.png") repeat-x bottom;
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_down.png") repeat-x bottom;
   position: absolute;
   left: 0;
 }
@@ -990,7 +990,7 @@ nav::before {
   display: block;
   position: absolute;
   background: red;
-  background: url("/assets/imgs/bg_black_repeat_top.png") top;
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_top.png") top;
   width: 100%;
   height: 180px;
   z-index: 2;
@@ -1006,7 +1006,7 @@ nav::before {
   height: 64px;
   font-size: 16px;
   line-height: 64px;
-  background-image: url("/assets/imgs/cast.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/cast.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1072,7 +1072,7 @@ nav::before {
   height: 100%;
   padding-top: 100%;
   width: 100%;
-  background: url("/assets/imgs/manga.png") center no-repeat;
+  background: url("/demon-slayer-framework-test/assets/imgs/manga.png") center no-repeat;
   background-size: cover;
 }
 .comic-section .manga-container .manga-grid li a .manga-title .ltsp {
@@ -1088,7 +1088,7 @@ nav::before {
 }
 
 .episodes-section {
-  background: url("/assets/imgs/bg_repeat_red.jpg");
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_repeat_red.jpg");
   padding-top: 170px;
   min-height: 1400px;
   position: relative;
@@ -1106,7 +1106,7 @@ nav::before {
   display: block;
   width: 100%;
   height: 300px;
-  background: url("/assets/imgs/bg_black_repeat_top.png") repeat-x bottom;
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_top.png") repeat-x bottom;
   position: absolute;
   left: 0;
   z-index: 0;
@@ -1114,7 +1114,7 @@ nav::before {
 .episodes-section::before {
   height: 100px;
   background-position: bottom;
-  background-image: url("/assets/imgs/bg_black_repeat_down.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_down.png");
   top: 0;
 }
 .episodes-section .episodes-list {
@@ -1234,7 +1234,7 @@ nav::before {
   display: block;
   position: absolute;
   background: red;
-  background: url("/assets/imgs/bg_black_repeat_top.png") top;
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_top.png") top;
   width: 100%;
   height: 180px;
   z-index: 2;
@@ -1245,7 +1245,7 @@ nav::before {
   width: 100%;
   height: 200px;
   top: 0px;
-  background: url("/assets/imgs/bg_black_repeat_down.png") repeat-x bottom;
+  background: url("/demon-slayer-framework-test/assets/imgs/bg_black_repeat_down.png") repeat-x bottom;
   position: absolute;
   left: 0;
 }
@@ -1267,7 +1267,7 @@ nav::before {
   height: 64px;
   font-size: 16px;
   line-height: 64px;
-  background-image: url("/assets/imgs/cast.png");
+  background-image: url("/demon-slayer-framework-test/assets/imgs/cast.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1306,7 +1306,7 @@ nav::before {
   .mobile-nav-section .mobile-open {
     text-align: center;
     position: relative;
-    background: url("/assets/imgs/menu_bg_repeat.jpg");
+    background: url("/demon-slayer-framework-test/assets/imgs/menu_bg_repeat.jpg");
   }
   .mobile-nav-section .mobile-open .mobile-icon {
     display: inline-block;
@@ -1359,7 +1359,7 @@ nav::before {
     width: 60px;
   }
   .mobile-nav-section .wrapped-menu {
-    background: url("/assets/imgs/menu_bg_repeat.jpg");
+    background: url("/demon-slayer-framework-test/assets/imgs/menu_bg_repeat.jpg");
     height: 100vh;
     animation: unfold 1s forwards;
   }
