@@ -269,7 +269,7 @@ section {
 nav {
   display: block;
   width: 100%;
-  background-image: url("/assets/imgs/menu_bg_repeat.jpg");
+  background-image: url("./assets/imgs/menu_bg_repeat.jpg");
 }
 nav .nav-list {
   display: flex;
